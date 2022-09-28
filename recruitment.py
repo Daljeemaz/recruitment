@@ -44,7 +44,8 @@ def get_user_cv(skills):
 
 # This functions checks if the cv is acceptable or not, by checking the age, experience and skills and return a boolean (True or False) based on that
 def check_acceptance(cv, desired_skill):
-    if "age" > 25 and < 40:
+    desired_skill = []
+    if "age" > 25 and "age" < 40:
         return True
     elif "experience" > 3:
         return True
@@ -52,7 +53,7 @@ def check_acceptance(cv, desired_skill):
         return True
     else:
         return False
-print(check_acceptance(cv,))
+print(check_acceptance(cv, desired_skill))
 
 def main():
     # Write your main logic here by combining the functions above into the
